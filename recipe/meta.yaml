@@ -1,5 +1,5 @@
 {% set name = "mkdocs-include-markdown-plugin" %}
-{% set version = "5.1.0" %}
+{% set version = "6.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs_include_markdown_plugin-{{ version }}.tar.gz
-  sha256: 4a1b8d79a0e1b6fd357ca8013a6d1701c755ada4acb74ee97b0642d1afe6756e
+  sha256: 3b84820d0805a94f9a8767c7a204d8e83d2ee7fc433fb4779dd21001826e20bf
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - wcmatch >=8,<9
     - python >=3.8,<3.13
 
 test:
