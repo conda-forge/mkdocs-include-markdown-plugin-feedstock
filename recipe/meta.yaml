@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<3.13
+    - python >=3.8
     - hatchling
     - pip
   run:
+    - python >=3.8
     - mkdocs >=1.4
-    - python >=3.8,<3.13
     - wcmatch >=8,<9
 
 test:
