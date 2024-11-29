@@ -1,5 +1,5 @@
 {% set name = "mkdocs-include-markdown-plugin" %}
-{% set version = "7.1.1" %}
+{% set version = "7.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mkdocs_include_markdown_plugin-{{ version }}.tar.gz
-  sha256: 3ca17da4d5d77cfa5f4da564e65dc74ee2aa6a7368119db23d650fb24d95fce9
+  sha256: 1b393157b1aa231b0e6c59ba80f52b723f4b7827bb7a1264b505334f8542aaf1
 
 build:
   noarch: python
